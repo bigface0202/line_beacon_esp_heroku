@@ -1,4 +1,4 @@
-# ESP32をLINE_beacon化してプッシュ通知を行うサンプルです。
+# ESP32をLINE_beacon化してプッシュ通知を行う
 ## ESP32をLINE beacon化
 こちらのプログラムを用いております。
 - [LINE Simple Beacon for ESP32](https://github.com/taichunmin/line-simplebeacon-esp32)
