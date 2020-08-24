@@ -1,4 +1,4 @@
-#define HWID "0141829b33"
+#define HWID "0000000000"
 
 #include "Arduino.h"
 #include "BLEAdvertising.h"
@@ -129,11 +129,13 @@ void setup() {
   pAdvertising->setAdvertisementData(adDataLine);
   pAdvertising->setScanResponseData(adDataEmpty);
   pAdvertising->start();
+  Serial.println("Advertising start!!");
   delay(1000);
 }
 
 void loop()
 {
+  Serial.println("Loop advertising");
   isAdDataLine = !isAdDataLine;
   pAdvertising->setAdvertisementData(isAdDataLine ? adDataLine : adDataIbeacon);
   pAdvertising->start();
